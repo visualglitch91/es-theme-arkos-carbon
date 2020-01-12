@@ -64,6 +64,7 @@ originally based on: "simple" by nils bonenberger
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
     <include name="violet" >./art/colors/violet.xml</include>
     <include name="cyan" >./art/colors/cyan.xml</include>
+    <include name="orange" >./art/colors/orange.xml</include>
   </subset>
 
   <view name="system,basic,detailed,grid">
@@ -561,6 +562,9 @@ originally based on: "simple" by nils bonenberger
       <fontSize>0.035</fontSize>
       <size>1 0</size>
     </text>
+    <ninepatch name="gridtile.background:selected">
+      <animateColorTime>0</animateColorTime>
+    </ninepatch>    
   </customView>
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
     <imagegrid name="gamegrid">
