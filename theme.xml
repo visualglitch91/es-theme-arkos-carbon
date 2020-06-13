@@ -78,6 +78,23 @@ originally based on: "simple" by nils bonenberger
   </view>
   <view name="system">
     <!-- Used by random box need to be declared there -->
+
+    <text name="manufacturerName" extra="static">
+      <pos>0.025 0.8</pos>
+      <size>0.98 0.15</size>
+      <text>Manufacturer : {manufacturer}
+Release Year : {release}</text>
+      <text lang="fr">Constructeur : {manufacturer}
+Année de sortie : {release}</text>
+      <alignment>left</alignment>
+      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.024</fontSize>
+      <glowSize>1</glowSize>
+      <glowColor>${glowColor}</glowColor>
+      <color>C0C0C0</color>      
+      <zIndex>100</zIndex>
+    </text>
+
     <image name="box" extra="true">
       <pos>0.50 0.18</pos>
       <origin>0.5 0.5</origin>
@@ -144,8 +161,8 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="horizontal">./art/systemview/horizontal.xml</include>
-    <include name="legacy">./art/systemview/legacy.xml</include>
-    <include name="transparent">./art/systemview/transparent.xml</include>
+    <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
+    <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
@@ -287,7 +304,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${basecolor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <fontSize>0.030</fontSize>
       <pos>0.025 0.18</pos>
@@ -296,6 +313,8 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.01</horizontalMargin>
       <forceUppercase>1</forceUppercase>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
   </view>
   <view name="detailed">
@@ -383,7 +402,7 @@ originally based on: "simple" by nils bonenberger
       <selectorColor>1c1c1c</selectorColor>
       <selectedColor>${baseColor}</selectedColor>
       <primaryColor>969696</primaryColor>
-      <secondaryColor>7a6161</secondaryColor>
+      <secondaryColor>808080</secondaryColor>
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
       <forceUppercase>1</forceUppercase>
       <pos>0.021 0.18</pos>
@@ -392,6 +411,8 @@ originally based on: "simple" by nils bonenberger
       <horizontalMargin>0.00</horizontalMargin>
       <fontSize>0.03</fontSize>
       <scrollSound>./art/scroll.wav</scrollSound>
+<lines>17</lines>
+<horizontalMargin>0.005</horizontalMargin>
     </textlist>
     <image name="md_hidden">
       <path>./art/hidden.svg</path>
@@ -404,12 +425,22 @@ originally based on: "simple" by nils bonenberger
 
     <image name="md_kidgame">     
       <path>./art/kid.svg</path>
+      <pos>0.86 0.9</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>969696</color>
+      <zIndex>150</zIndex>
+    </image>
+
+    <image name="md_manual">
+      <path>./art/manual.svg</path>
       <pos>0.882 0.9</pos>
       <maxSize>0.02 0.03</maxSize>      
       <origin>0.5 0.5</origin>
       <color>969696</color>
       <zIndex>150</zIndex>
     </image>
+
 <!--
     <image name="md_favorite">
       <pos>0.975 0.21</pos>
@@ -501,6 +532,26 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFF</color>
       <unfilledColor>808080</unfilledColor>
     </rating>
+<!--
+    <image name="md_fanart">
+      <pos>0.5 0.08</pos>
+      <minSize>1 0.16</minSize>      
+      <origin>0.5 0.5</origin>
+      <color>808080</color>
+      <zIndex>1</zIndex>
+<linearSmooth>true</linearSmooth>
+    </image>
+-->
+
+    <image name="md_manual">
+      <path>./art/manual.svg</path>
+      <pos>0.023 0.896</pos>
+      <maxSize>0.02 0.03</maxSize>      
+      <origin>0.5 0.5</origin>
+      <color>808080</color>
+      <zIndex>150</zIndex>
+    </image>
+
     <imagegrid name="gamegrid">
       <!--
       <pos>0.025 0.16</pos>
