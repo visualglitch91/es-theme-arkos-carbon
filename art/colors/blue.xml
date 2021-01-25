@@ -2,12 +2,11 @@
 <theme>
   <formatVersion>7</formatVersion>
   <variables>
-    <baseColor>3675CA</baseColor>
-    <bottomBarColor>4075D8C5</bottomBarColor>
-
+    <baseColor>30508b</baseColor>
     <gradientEndColor>00205b</gradientEndColor>
-    <centerFadeColor>4060a050</centerFadeColor>    
-    <backgroundColor>051222</backgroundColor>
+    <centerFadeColor>40609b50</centerFadeColor>    
+    <backgroundColor>081622</backgroundColor>
+    <bottomBarColor>407bc0B9</bottomBarColor>
     <glowColor>3060Ab24</glowColor>
     <systemInfoColor>FAFAFFB0</systemInfoColor>
     <backgroundImage>./art/fiber.png</backgroundImage>

@@ -1,22 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <feature supported="manufacturer">
-    <view name="system">
-      <text name="manufacturerName" extra="static">
-        <pos>0.029 0.067</pos>
-        <alignment>right</alignment>
-      </text>
-      <text name="fullName" extra="true">
-        <pos>0.03 0.15</pos>
-        <alignment>right</alignment>
-      </text>
-      <text name="releaseYyear" extra="true">
-       <pos>0.03 0.187</pos>
-        <alignment>right</alignment>
-      </text>
-    </view>
-  </feature>
   <view name="system">
     <!-- When random box -->
     <image name="box" extra="true">
@@ -63,7 +47,6 @@
     <text name="systemInfo">
       <pos>0.175 0.67</pos>
       <size>1 0.25</size>
- <pos>0.05 0.67</pos>
       <backgroundColor>0000FF00</backgroundColor>
       <color>${systemInfoColor}</color>
       <glowColor>${glowColor}</glowColor>
@@ -87,11 +70,4 @@
 
 
   </view>
-  <feature supported="manufacturer">
-    <view name="system">
-      <text name="systemInfoEx" extra="true">
-        <alignment>right</alignment>
-      </text>
-    </view>
-  </feature>  
 </theme>
