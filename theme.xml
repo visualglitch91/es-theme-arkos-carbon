@@ -384,7 +384,7 @@ Année de sortie : ${system.releaseYear}</text>
     </image>
     <text name="md_developer">
       <color>EFEFFF</color>
-      <pos>0.558 0.875</pos>
+      <pos>0.53 0.875</pos>
       <size>0.30 0.05</size>
       <alignment>left</alignment>
       <fontSize>0.025</fontSize>
