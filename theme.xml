@@ -284,6 +284,7 @@ Année de sortie : ${system.releaseYear}</text>
       <path>./art/frame.png</path>
     </menuBackground>
     <menuIcons name="menuicons">
+      <iconBrightnessctl>./art/icons/Brightnessctl.png</iconBrightnessctl>
       <iconKodi>./art/icons/Kodi.png</iconKodi>
       <iconSystem>./art/icons/System.png</iconSystem>
       <iconUpdates>./art/icons/Updates.png</iconUpdates>
